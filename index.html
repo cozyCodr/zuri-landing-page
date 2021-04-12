@@ -14,7 +14,7 @@
             </ul>
 
             <ul>
-                <li><img src='logo/zuri-logo-full.svg'></li>
+                <li><img src='logo/zuri-logo-full.svg' id='nav-logo'></li>
             </ul>
 
             <ul id='right-nav' class='nav-design'>
@@ -120,80 +120,102 @@
             <p>Note: This workspace requires you to register with the same email address and username as you have on the slack workspace. </p>
 
             <form>
-                <div id='fName-lName'>
-                    <label for='fname'>
-                        <input id='fname' type='text' placeholder="First Name" class='input-select' required>
-                    </label>
+                <div id='fName-lName' class='responsive-width input-group'>
+                    <div id='fname-div' class='div-width'>
+                        <label for='fname'>
+                            <input id='fname' type='text' placeholder="First Name" class='input-select' required>
+                        </label>
+                    </div>
 
-                    <label for='lname'>
-                        <input id='lname' type='text' placeholder="Last Name" class='input-select' required>
-                    </label>
+                    <div id='lname-div' class='div-width'>
+                        <label for='lname'>
+                            <input id='lname' type='text' placeholder="Last Name" class='input-select' required>
+                        </label>
+                    </div>
                 </div>
 
-                <div id='mName-uName'>
-                    <label for='mname'>
-                        <input id='mname' type='text' placeholder="Middle Name" class='input-select'>
-                    </label>
+                <div id='mName-uName' class='responsive-width input-group'>
+                    <div id='mname-div' class='div-width'>
+                        <label for=' mname'>
+                            <input id='mname' type='text' placeholder="Middle Name" class='input-select'>
+                        </label>
+                    </div>
 
-                    <label for='uname'>
-                        <input id='uname' type='text' placeholder="UserName" class='input-select' required>
-                    </label>
+                    <div id='uname-div' class='div-width'>
+                        <label for='uname'>
+                            <input id='uname' type='text' placeholder="UserName" class='input-select' required>
+                        </label>
+                    </div>
                 </div>
 
-                <div id='gender-age'>
-                    <select id='gender' class='input-select'>
-                        <option selected disabled>Select a Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
+                <div id='gender-age' class='responsive-width input-group'>
 
-                    <label for='age'>
-                        <input id='age' type="number" placeholder="Age" min=10 max=90 class='input-select' required>
-                    </label>
+                    <div id='gender-div' class='div-width'>
+                        <select id='gender' class='input-select'>
+                            <option selected disabled>Select a Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div id='age-div' class='div-width'>
+                        <label for='age'>
+                            <input id='age' type="number" placeholder="Age" min=10 max=90 class='input-select' required>
+                        </label>
+                    </div>
                 </div>
 
-                <div id='track-experience'>
-                    <select id='track' class='input-select'>
-                        <option selected disabled>Select a Track</option>
-                        <option>Frontend</option>
-                        <option>Backend</option>
-                        <option>Mobile</option>
-                        <option>UI/UX</option>
-                    </select>
+                <div id='track-experience' class='responsive-width input-group'>
 
-                    <select id='exp-lvl' class='input-select'>
-                        <option selected disabled>Experience Level</option>
-                        <option>0 years</option>
-                        <option>1 - 2 years</option>
-                        <option>2 - 4 years</option>
-                        <option>>4years</option>
-                    </select>
+                    <div id='track-div' class='div-width'>
+                        <select id='track' class='input-select'>
+                            <option selected disabled>Select a Track</option>
+                            <option>Frontend</option>
+                            <option>Backend</option>
+                            <option>Mobile</option>
+                            <option>UI/UX</option>
+                        </select>
+                    </div>
 
-                </div>
-
-                <div id='emp-edu'>
-                    <select id='emp-status' class='input-select'>
-                        <option selected disabled>Employment Status</option>
-                        <option>Full time </option>
-                        <option>Part time</option>
-                        <option>Student</option>
-                        <option>>Unemployed</option>
-                    </select>
-
-                    <select id='edu-lvl' class='input-select'>
-                        <option selected disabled>Education Level</option>
-                        <option>No Education</option>
-                        <option>Primary Education</option>
-                        <option>Secondary Education</option>
-                        <option>>Degree</option>
-                        <option>>Masters</option>
-                        <option>>Doctorate</option>
-                    </select>
+                    <div id='exp-div' class='div-width'>
+                        <select id='exp-lvl' class='input-select'>
+                            <option selected disabled>Experience Level</option>
+                            <option>0 years</option>
+                            <option>1 - 2 years</option>
+                            <option>2 - 4 years</option>
+                            <option>4years</option>
+                        </select>
+                    </div>
 
                 </div>
 
-                <div id='last4items'>
+                <div id='emp-edu' class='responsive-width input-group'>
+
+                    <div id='emp-div' class='div-width'>
+                        <select id='emp-status' class='input-select'>
+                            <option selected disabled>Employment Status</option>
+                            <option>Full time </option>
+                            <option>Part time</option>
+                            <option>Student</option>
+                            <option>>Unemployed</option>
+                        </select>
+                    </div>
+
+                    <div id='edu-div' class='div-width'>
+                        <select id='edu-lvl' class='input-select'>
+                            <option selected disabled>Education Level</option>
+                            <option>No Education</option>
+                            <option>Primary Education</option>
+                            <option>Secondary Education</option>
+                            <option>>Degree</option>
+                            <option>>Masters</option>
+                            <option>>Doctorate</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id='last4items' class='responsive-width input-group'>
 
                     <label>
                         <input type='email' placeholder="Email" class='input-select' required>
