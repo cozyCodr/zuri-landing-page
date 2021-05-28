@@ -1,1 +1,2 @@
-#Zuri Landing Page
+# Zuri Landing Page
+https://zurilandingpagecc.netlify.app
